@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey & Payment Forms</title>
+</head>
+
+<body style="font-family: sans-serif;">
+
+<header>
+
+    <h1 style="text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">Types of Forms</h1><br><br>
+
+    <h2 style="font-family: 'Courier New', Courier, monospace;">NAVIGATION MENU</h2>
+
+    <nav>
+        <a href="#personal_info">Personal Information</a> --|-- 
+        <a href="#address">Address</a> --|-- 
+        <a href="#itemdata">Data-Item</a> --|-- 
+        <a href="#payment">Payment</a> --|-- 
+        <a href="#contact">Contact-Us</a> 
+    </nav><br><hr><br><br>
+
+</header>
+
+<main>
+
+<!-- Personal Information form / Introduction form  -->
+<div style="margin: auto; width: 50%;" id="personal_info">
+
+    <h2 style="font-family: 'Courier New', Courier, monospace;">Personal Information</h2>
+
+    <form action="#" method="post"  >
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" name="fullname" placeholder="Enter your Name" id="name" size="30" required>
+            </div><br>
+
+            <div>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" placeholder="Enter your e-Mail" id="email" size="30" required>
+            </div><br>
+
+            <div>
+                <label for="username">Username</label><br>
+                <input type="text" name="username" placeholder="Enter your Userame" id="username" size="30" required>
+            </div><br>
+
+            <div>
+                <p>Gender</p>
+                <input type="radio" name="gender" value="male" required> Male 
+                <input type="radio" name="gender" value="female" required> Female 
+                <input type="radio" name="gender" value="other" required> Other 
+            </div><br>
+
+            <div>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="date" required>
+            </div><br>
+
+            <div>
+                <label for="phone">Contact No.</label><br>
+                <input type="number" id="phone" name="phone">
+            </div><br>
+            
+            <textarea name="describe" id="describe" cols="50" rows="5" placeholder="Describe about yourself ..."></textarea> <br><br>
+
+            <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form>
+
+</div><br><br>
+
+
+<!-- Address Form -->
+<div style=" margin: auto; width: 50%;" id="address">
+
+    <h2  style="font-family: 'Courier New', Courier, monospace;" >Address</h2>
+
+    <form action="#" method="post">
+
+    <fieldset>
+        <legend>Address</legend>
+
+        <div>
+            <label for="country_input">Country</label><br>
+            <input list="country" id="country_input" name="country" required>
+            <datalist id="country">
+                <option value="India">
+                <option value="USA">
+                <option value="China">
+                <option value="Japan">
+                <option value="Germany">
+                <option value="Australia">
+            </datalist>
+        </div><br>
+
+        <div>
+            <label for="state">State</label><br>
+            <input type="text" name="state" id="state">
+        </div><br>
+
+        <div>
+            <label for="pincode">Pincode</label><br>
+            <input type="number" id="pincode" name="pincode" placeholder="6-Digit"min="1" max="999999" required>
+        </div><br>
+
+        <div>
+            <label for="houseno">House No. /  Building, Company, Apartment</label><br>
+            <input type="text" id="houseno" name="houseno" size="50">
+        </div><br>
+
+        <div>
+            <label for="area">Area, Street, Sector / Village</label><br>
+            <input type="text" id="area" name="area" size="50">
+        </div><br>
+
+        <div>
+            <label for="landmark">Landmark</label><br>
+            <input type="text" id="landmark" name="landmark" size="50">
+        </div><br>
+
+        <input type="submit">
+
+    </fieldset>
+
+    </form>
+
+</div><br><br>
+
+
+<!-- Item / Data Form -->
+<div style=" margin: auto; width: 50%;" id="itemdata">
+
+    <h2  style="font-family: 'Courier New', Courier, monospace;" >Data-Item</h2>
+
+    <form action="#" method="post" >
+
+    <fieldset>
+        <legend>Data-Item</legend>
+
+        <div>
+            <label for="diname">Item Name</label><br>
+            <input type="text" name="difullname" id="diname" size="30" required>
+        </div><br>
+
+        <div>
+            <label for="mname">Model Name</label><br>
+            <input type="text" name="mfullname" id="mname" size="30" required>
+        </div><br>
+
+        <div>
+            <label for="category">Category</label><br>
+            <input list="category" name="category">
+            <datalist id="category">
+                <option value="Electronics">
+                <option value="Fashion">
+                <option value="Vehicles">
+                <option value="Books">
+                <option value="Movies">
+                <option value="Health">
+                <option value="Beauty">
+                <option value="Grocery">
+                <option value="Home & Kitchen">
+            </datalist>
+        </div><br>
+
+        <div>
+            <label for="itemcount">Item Count |</label>
+            <input type="number" name="itemcount" id="itemcount" min="1" max="9">
+        </div><br>
+
+        <div>
+            <label for="manudate">Date of Manufature</label><br>
+            <input type="date" id="manudate" name="manudate" required>
+        </div><br>
+
+        <div>
+            <label for="expdate">Date of Expiry</label><br>
+            <input type="date" id="expdate" name="expdate" required>
+        </div><br>
+
+        <div>
+            <label for="gift">Gift Code Number ( if applicable )</label><br>
+            <input type="number" name="gift" id="gift" >
+        </div><br>
+
+        <input type="submit">
+
+    </fieldset>
+
+    </form>
+
+</div><br><br>
+
+
+<!-- Payment Form -->
+<div style=" margin: auto; width: 50%;" id="payment" >
+
+    <h2  style="font-family: 'Courier New', Courier, monospace;" >Payment</h2>
+
+    <form action="#" method="post" >
+
+    <fieldset>
+        <legend>Payment</legend>
+
+        <div>
+            <p>Payment Method</p>
+            <input type="radio" name="pm" id="creditcard">
+            <label for="creditcard">Credit creditcard</label><br>
+            <input type="radio" name="pm" id="debitcard">
+            <label for="debitcard">Debit creditcard</label><br>
+            <input type="radio" name="pm" id="upi">
+            <label for="upi">UPI</label><br>
+
+        </div><br>
+
+        <div>
+            <label for="payername">Name</label><br>
+            <input type="text" name="payername" id="payername" >
+        </div><br>
+
+        <div>
+            <label for="cardno">Card Number</label><br>
+            <input type="number" id="cardno" name="cardno" required>
+        </div><br>
+
+        <div>
+            <label for="cvv">CVV || UPI PIN</label><br>
+            <input type="number" id="cvv" name="cvv" min="0" max="999999" required>
+        </div><br>
+
+        <div>
+            <label for="expdate">Expiry Date</label><br>
+            <input type="month" id="expdate" name="expdate">
+        </div><br>
+
+        <input type="submit">
+
+    </fieldset>
+
+    </form>
+
+</div><br><br>
+
+
+<!-- Contact-Us Form -->
+<div style=" margin: auto; width: 50%;" id="contact">
+
+    <h2  style="font-family: 'Courier New', Courier, monospace;" >Contact-Us</h2>
+    
+    <form action="#" method="post" >
+
+    <fieldset>
+        <legend>Contact-Us</legend>
+
+        <div>
+            <label for="cuname">Name</label><br>
+            <input type="text" name="cufullname" placeholder="Name" id="cuname" size="30" required>
+        </div><br>
+
+        <div>
+            <label for="cuemail">E-mail</label><br>
+            <input type="email" name="cuemail" placeholder="abc@email.com" id="cuemail" size="30" required>
+        </div><br>
+
+        <div>
+            <label for="cuphone">Contact No.</label><br>
+            <input type="number" id="cuphone" name="cuphone">
+        </div><br>
+
+        <textarea name="cudescribe" id="cudescribe" cols="50" rows="5" placeholder="Describe your concern ..."></textarea> <br><br>
+
+        <input type="submit">
+
+    </fieldset>
+
+    </form>
+
+</div>
+
+</main><br><hr>
+
+<footer>
+
+<div>
+    <table width="100%" style="font-family: 'Courier New', Courier, monospace;">
+        <td><p style="text-align: left;">&copy;Copyright - giriraj</p></td>
+        <td><p style="text-align: right;">giriraj@gamil.com</p></td>
+    </table>
+</div>
+
+</footer>
+</body>
+</html>
